@@ -18,24 +18,15 @@ public class Convert
     public static void main( String[] args ) throws IOException
     {
 
-        // String folder = System.getenv("INPUT_FOLDER");
-        // String outputFolder = System.getenv("OUTPUT_FOLDER");
-
-        // System.out.println(folder + " => " + outputFolder);
-
-
         if(args.length < 1){
-            System.out.println("Need Input source and output Path to proceed!");
+            System.out.println("Need Input source to proceed!");
             System.exit(0);
         }
-        //"C:\\Sameer\\Sameer\\ot2\\SearchService\\p2\\queryfiles\\input"
         System.out.println(args[0]);
         File filesList = new File(args[0]);
         String outputFolder = args[0]+"\\output";
         File files[] = filesList.listFiles();
         
-
-
         System.out.println(files.length);
         for(File file: files){
 
